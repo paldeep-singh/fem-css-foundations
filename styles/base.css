@@ -8,6 +8,8 @@
 
   --color-button-secondary-bg: var(--color-primary);
   --color-button-secondary-text: var(--color-text-on-primary);
+
+  --color-text-on-secondary: #000000;
 }
 
 a {
@@ -15,6 +17,7 @@ a {
   text-decoration: inherit;
 }
 
+h2,
 p {
   margin: 0;
 }
@@ -95,4 +98,8 @@ p {
 .button--secondary {
   background: var(--color-button-secondary-bg);
   color: var(--color-button-secondary-text);
+}
+
+.main {
+  padding: 150px;
 }
