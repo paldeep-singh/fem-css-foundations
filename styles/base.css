@@ -10,12 +10,6 @@
   --color-button-secondary-text: var(--color-text-on-primary);
 }
 
-body {
-  background-color: var(--color-primary);
-  color: var(--color-text-on-primary);
-  font-family: var(--font-family);
-}
-
 a {
   color: inherit;
   text-decoration: inherit;
@@ -23,6 +17,20 @@ a {
 
 p {
   margin: 0;
+}
+
+.body {
+  font-family: var(--font-family);
+}
+
+.body--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
 }
 
 .header {
