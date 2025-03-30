@@ -13,3 +13,19 @@
   display: flex;
   margin-top: 100px;
 }
+
+@media (width < 1220px) {
+  .home .main__heading {
+    font-size: 70px;
+  }
+}
+
+@media (width < 590px) {
+  .home .main__heading {
+    font-size: 40px;
+  }
+
+  .home .main__sub-heading {
+    font-size: 24px;
+  }
+}
