@@ -133,3 +133,57 @@ p {
     flex-wrap: wrap;
   }
 }
+
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media (width < 840px) {
+  .menu {
+    display: block;
+  }
+
+  .menu--hide {
+    display: none;
+  }
+
+  .close--show {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-primary);
+    top: 60px;
+    left: -100%;
+    padding-top: 60px;
+  }
+
+  .nav--visible {
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: space-around;
+    justify-self: flex-start;
+    height: 80%;
+  }
+
+  .nav__list-item {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 33px 1fr 34px;
+    justify-items: center;
+  }
+}
