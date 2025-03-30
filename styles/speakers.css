@@ -49,3 +49,9 @@
 .speaker__bio {
   color: var(--color-text-on-secondary);
 }
+
+@media (width < 840px) {
+  .nav {
+    background-color: var(--color-text-on-primary);
+  }
+}

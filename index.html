@@ -96,22 +96,6 @@
       </div>
     </main>
 
-    <script>
-      const nav = document.querySelector(".nav");
-      const menu = document.querySelector(".menu");
-      const close = document.querySelector(".close");
-
-      menu.addEventListener("click", () => {
-        nav.classList.add("nav--visible");
-        menu.classList.add("menu--hide");
-        close.classList.add("close--show");
-      });
-
-      close.addEventListener("click", () => {
-        close.classList.remove("close--show");
-        menu.classList.remove("menu--hide");
-        nav.classList.remove("nav--visible");
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>

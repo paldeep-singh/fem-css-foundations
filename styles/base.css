@@ -142,6 +142,11 @@ p {
   display: none;
 }
 
+.menu,
+.close {
+  cursor: pointer;
+}
+
 @media (width < 840px) {
   .menu {
     display: block;
@@ -159,10 +164,10 @@ p {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-primary);
     top: 60px;
     left: -100%;
     padding-top: 60px;
+    transition: left 0.2s linear;
   }
 
   .nav--visible {
@@ -185,5 +190,9 @@ p {
     display: grid;
     grid-template-columns: 33px 1fr 34px;
     justify-items: center;
+  }
+
+  .body--no-scroll {
+    overflow: hidden;
   }
 }

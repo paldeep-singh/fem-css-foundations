@@ -34,3 +34,9 @@
 .home .close path {
   fill: var(--color-text-on-primary);
 }
+
+@media (width < 840px) {
+  .nav {
+    background-color: var(--color-primary);
+  }
+}
